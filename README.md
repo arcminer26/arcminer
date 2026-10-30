@@ -2,8 +2,8 @@
 
 Native Windows-focused C++20 / CUDA GPU cryptocurrency miner project.
 
- ts fused CUDA search kernel is used by default on the tested RTX 3060 Ti 
-(SM 8.6) and falls back to the original Arcminer path if unavailable. 
+CUDA search kernel is used by default on the tested RTX 3060 Ti 
+(SM 86) and falls back to the original Arcminer path if unavailable. 
 Set `ARCMINER_FUSED=0` in the process environment to disable it, 
 or `ARCMINER_FUSED=1` to test it on another GPU. Candidate hashes 
 are independently checked on the CPU before submission.
